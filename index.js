@@ -1,8 +1,8 @@
-const form = document.querySelector(".submit-form");
-
 const input = document.querySelector(".task");
 
 const ul = document.querySelector(".list");
+
+const addBtn = document.querySelector(".add-button");
 
 let lists = JSON.parse(localStorage.getItem("lists"));
 
@@ -10,8 +10,7 @@ lists.forEach((task) => {
   todoList(task);
 });
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+addBtn.addEventListener("click", (event) => {
   todoList();
 });
 
@@ -24,6 +23,12 @@ function todoList(task) {
   let li = document.createElement("li");
   if (task && task.checked) {
     li.classList.add("todolist");
+  }
+
+  if (newTask === "") {
+    return alert("Enter valid task");
+  } else {
+    ul.appendChild(li);
   }
 
   li.innerText = newTask;
