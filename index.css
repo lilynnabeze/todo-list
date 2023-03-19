@@ -2,19 +2,17 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  background-color: #EBECF0;
+  background-color: #ebecf0;
 }
 
 .submit-form {
   position: absolute;
   top: 30%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   width: 450px;
-  background-color: #F2F9FF;
+  background-color: #f2f9ff;
   border-radius: 8px;
 }
-
-
 
 .task {
   width: 100%;
@@ -24,35 +22,33 @@ body {
   border: none;
   background-color: whitesmoke;
   font-size: 15px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   outline: none;
-  
-
 }
 
 .container {
   position: relative;
-   
 }
 
-
-button {
+/* button {
   border: 0px;
-  color: #99EE99;
+  color: #99ee99;
   padding: 8px;
   border-radius: 8px;
-}
+} */
 
 .add-button {
   background-color: #2b472b;
-  margin: 0;
+  border: 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #99ee99;
   cursor: pointer;
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  
-  
 }
 
 .task::placeholder {
@@ -61,20 +57,17 @@ button {
   font-weight: medium;
 }
 
-
-
 .list {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column-reverse;
-
 }
 
 .list li {
   padding: 20px;
   list-style-type: none;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
   border-top: solid;
   border-color: beige;
@@ -90,7 +83,6 @@ button {
   transform: translateY(-50%);
   cursor: pointer;
 }
-
 
 .list li .fa-square-check {
   color: green;
@@ -109,5 +101,3 @@ button {
 .list li.todolist .fa-square-check {
   color: darkgrey;
 }
-
-
