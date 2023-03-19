@@ -1,47 +1,28 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO List</title>
-    <link rel="stylesheet" href="index.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-do-List</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
 
-<body>
-    <div class="container">
-        <h2>TODO LIST</h2>
-        <h3>Add Item</h3>
-      <form id="submit-form"> 
-        <div class="new-task-container" id="task-container">
-            <input id="new-task" type="text" />
-            <button id="add-button" type="submit">Add</button>
-        </div>
-      </form>
-
-        <h3>Todo</h3>
-        <ul id="incomplete-tasks">
-            <li class="todolist">
-                <p>Host live session with Stutern learners</p>
-                <button id="edit-button">Edit</button>
-                <button class="delete-button">Delete</button>
-            </li>
-            <li class="todolist">
-                <p>Host live session with Stutern learners</p>
-                <button id="edit-button">Edit</button>
-                <button class="delete-button">Delete</button>
-            </li>
-
-            <li class="todolist">
-                <p>Host live session with Stutern learners</p>
-                <button id="edit-button">Edit</button>
-                <button class="delete-button">Delete</button>
-            </li>
-        </ul>
-    </div>
-    <script src="index.js"></script>
-</body>
-
+    <body>
+        <form class="submit-form"> 
+          <div class="container">
+            <input class="task" type="text" placeholder="Enter task" required/>
+            <button class = "add-button"><i class="fa-solid fa-plus"></i></button>
+          </div>
+            <ul class="list">
+                <!-- <li class="todolist">Learn JavaScript<i class="fa-solid fa-square-check"></i><i class="fa-solid fa-trash"></i></li>
+                <li>Learn CSS<i class="fa-solid fa-square-check"></i><i class="fa-solid fa-trash"></i></li>
+                 -->
+            </ul>  
+            
+        </form>
+        <script src="index.js"></script>
+    </body>
 </html>
