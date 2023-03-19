@@ -6,11 +6,14 @@ const addBtn = document.querySelector(".add-button");
 
 let lists = JSON.parse(localStorage.getItem("lists"));
 
+if(lists !== null) {
 lists.forEach((task) => {
-  todoList(task);
+  todoList(task)
 });
+}
 
 addBtn.addEventListener("click", (event) => {
+  event.preventDefault();
   todoList();
 });
 
@@ -58,7 +61,7 @@ function updateLocalStorage() {
   const liElements = document.querySelectorAll("li");
 
   lists = [];
-  liElements.forEach((li) => {
+  Array.from(liElements).forEach(li => {
     lists.push({
       name: li.innerText,
       checked: li.classList.contains("todolist"),
@@ -66,4 +69,4 @@ function updateLocalStorage() {
   });
 
   localStorage.setItem("lists", JSON.stringify(lists));
-}
+};
