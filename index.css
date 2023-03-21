@@ -96,9 +96,9 @@ body {
   color: darkgrey;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 350px) {
   .submit-form {
-    top: 20%;
+    top: 20px;
   }
 
   .add-button {
