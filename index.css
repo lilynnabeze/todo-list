@@ -96,17 +96,34 @@ body {
   color: darkgrey;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 500px) {
   .submit-form {
     top: 20px;
     width: 300px;
+    margin-right: 0;
   }
 
   .add-button {
     right: 10px;
+    
+   
   }
 
   .list li {
-    margin-left: 0;
+    margin-left: 15px;
+   
   }
+
+  .list li .fa-trash {
+    
+    right: 18px;
+    
+  }
+
+  .task::placeholder {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+
+
 }
