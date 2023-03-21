@@ -95,3 +95,17 @@ body {
 .list li.todolist .fa-square-check {
   color: darkgrey;
 }
+
+@media only screen and (max-width: 600px) {
+  .submit-form {
+    top: 20%;
+  }
+
+  .add-button {
+    right: 10px;
+  }
+
+  .list li {
+    margin-left: 0;
+  }
+}
