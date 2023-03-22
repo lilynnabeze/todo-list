@@ -16,7 +16,7 @@ body {
 }
 
 .task {
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;
   padding: 20px;
   border-radius: 8px 8px 4px 4px;
@@ -56,6 +56,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column-reverse;
+  word-wrap: break-word;
 }
 
 .list li {
@@ -67,12 +68,13 @@ body {
   border-color: beige;
   position: relative;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .list li .fa-trash {
   color: red;
   position: absolute;
-  right: 27px;
+  right: 2px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -100,30 +102,22 @@ body {
   .submit-form {
     top: 20px;
     width: 300px;
-    margin-right: 0;
   }
 
   .add-button {
     right: 10px;
-    
-   
   }
 
   .list li {
     margin-left: 15px;
-   
   }
 
   .list li .fa-trash {
-    
-    right: 18px;
-    
+    right: 0;
   }
 
   .task::placeholder {
     font-size: 16px;
     font-weight: lighter;
   }
-
-
 }
