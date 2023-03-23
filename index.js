@@ -28,7 +28,7 @@ function todoList(task) {
     li.classList.add("todolist");
   }
 
-  if (newTask === "") {
+  if (newTask.trim() === "") {
     return alert("Enter valid task");
   } else {
     ul.appendChild(li);
